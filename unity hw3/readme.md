@@ -3,6 +3,7 @@
 ## 1.操作与总结 
 > * 参考 Fantasy Skybox FREE 构建自己的游戏场景
 > #### 答：
+![此处输入图片的描述][1]
 
 
 > * 写一个简单的总结，总结游戏对象的使用
@@ -205,3 +206,5 @@ public class SSActionManager : MonoBehaviour {
 	}
 }
 ```
+
+ [1]: https://github.com/ddghost/unity3d/blob/master/unity%20hw3/%E6%88%AA%E5%9B%BE/1.jpg
