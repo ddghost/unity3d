@@ -1,13 +1,14 @@
-# unity hw3
+贴一个博客
+https://blog.csdn.net/ddghsot/article/details/79879790
 
 ## 1.操作与总结 
 > * 参考 Fantasy Skybox FREE 构建自己的游戏场景
-> #### 答：
-![此处输入图片的描述][1]
+>  ####  答：
+> ![这里写图片描述](https://img-blog.csdn.net/20180410131542908?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0REZ2hzb3Q=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 
 > * 写一个简单的总结，总结游戏对象的使用
-> #### 答：游戏对象有
+>  ####  答：游戏对象有
 > * 空（empty）：在设计牧师与魔鬼的时候，由于要求动态生成场景，因此空对象可以用于挂载脚本来加载资源。
 > * 摄像机（camera）：屏幕左下角是（0，0），右上角是（1，1），摄像机可以通过设定不同的深度进行分屏显示，例如可以用两个摄像机来实现主视角和角落的小地图的显示。
 > * 光线（light）：没怎么使用过，调整过平行光线的角度，让场景看起来有些不同。
@@ -15,7 +16,6 @@
 
 ## 2.编程实践
 ### 实现牧师与魔鬼的动作分离
-#### 本次作业只修改了代码，游戏的逻辑和ui没有改变，因此视频还是上一次作业的。
 刚开始对动作的分离还不是太清晰，现在想想，动作分离应该就是把游戏里的动作实现从场记那里抽离出来，另外写一个动作管理器来提供接口进行对象动作的增删。
 最开始的动作实现（仅以船为例，由于牧师与魔鬼是直接到船上的，所以没有位移）是通过在船上挂载一个处理鼠标点击的脚本(toSolveClick)和一个运动脚本(updateBoatMove)。
 ```
@@ -206,5 +206,3 @@ public class SSActionManager : MonoBehaviour {
 	}
 }
 ```
-
- [1]: https://github.com/ddghost/unity3d/blob/master/unity%20hw3/%E6%88%AA%E5%9B%BE/1.jpg
