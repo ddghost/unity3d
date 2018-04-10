@@ -15,6 +15,11 @@ https://blog.csdn.net/ddghsot/article/details/79879790
 
 ## 2.编程实践
 ### 实现牧师与魔鬼的动作分离
+
+按照老师给的层次进行改进。
+> ![此处输入图片的描述][2]
+
+
 刚开始对动作的分离还不是太清晰，现在想想，动作分离应该就是把游戏里的动作实现从场记那里抽离出来，另外写一个动作管理器来提供接口进行对象动作的增删。
 最开始的动作实现（仅以船为例，由于牧师与魔鬼是直接到船上的，所以没有位移）是通过在船上挂载一个处理鼠标点击的脚本(toSolveClick)和一个运动脚本(updateBoatMove)。
 ```
@@ -206,3 +211,4 @@ public class SSActionManager : MonoBehaviour {
 }
 ```
 [1]: https://github.com/ddghost/unity3d/blob/master/unity%20hw3/%E6%88%AA%E5%9B%BE/1.jpg
+[2]: https://github.com/ddghost/unity3d/blob/master/unity%20hw3/%E6%88%AA%E5%9B%BE/%E5%8A%A8%E4%BD%9C%E5%88%86%E7%A6%BB.jpg
