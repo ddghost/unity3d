@@ -4,8 +4,7 @@ https://blog.csdn.net/ddghsot/article/details/79879790
 ## 1.操作与总结 
 > * 参考 Fantasy Skybox FREE 构建自己的游戏场景
 >  ####  答：
-> ![这里写图片描述](https://img-blog.csdn.net/20180410131542908?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0REZ2hzb3Q=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
-
+> ![此处输入图片的描述][1]
 
 > * 写一个简单的总结，总结游戏对象的使用
 >  ####  答：游戏对象有
@@ -206,3 +205,4 @@ public class SSActionManager : MonoBehaviour {
 	}
 }
 ```
+[1]: https://github.com/ddghost/unity3d/blob/master/unity%20hw3/%E6%88%AA%E5%9B%BE/1.jpg
