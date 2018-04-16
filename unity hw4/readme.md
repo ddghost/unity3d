@@ -2,11 +2,11 @@
 ## 1、编写一个简单的鼠标打飞碟（Hit UFO）游戏
 游戏的演示视频地址：http://v.youku.com/v_show/id_XMzU0Mjg0NDg3Mg==.html?spm=a2h3j.8428770.3416059.1
 根据老师课件中的uml图，进行游戏的设计。
-
+![这里写图片描述](https://img-blog.csdn.net/20180416185709167?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0REZ2hzb3Q=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 游戏的简要介绍：本次的飞碟游戏一共三关，并且没有中断，有三种飞碟，速度大小和颜色不同，第一关刷第一级别的飞碟，第二关会随机刷第一、二级别的飞碟，第三关会随机刷第一、二、三级别的飞碟。每关有10个左右的飞碟，飞碟级别越高得分也越高，暂停关卡的话点击飞碟是不会有任何效果的。
 
 开始先预先做好飞碟的预设，飞碟只是一个高度很矮的圆柱，不同级别的飞碟会用脚本直接调节飞碟的组件属性，因此只有一个飞碟预设。
-
+![这里写图片描述](https://img-blog.csdn.net/2018041618572244?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0REZ2hzb3Q=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 首先是飞碟类的代码编写,该类有一个私有的游戏对象飞碟，以便直接对飞碟的颜色，大小等等进行调整，由于一个飞碟由工厂生产出来后就会不停的使用以节省对象生成和销毁的开销，因此飞碟重新使用时会有一个reset（）方法来重新设置飞碟的参数，reset（）方法通过传递该飞碟的等级，来进行大小、速度等等调整。
 ```
 public class diskInfo{
