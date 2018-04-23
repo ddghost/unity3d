@@ -1,5 +1,11 @@
 # unity hw5
-根据老师的unl图，在之前的打飞碟游戏的代码的基础上进行修改
+博客地址为https://blog.csdn.net/DDghsot/article/details/80053559
+
+视频地址为http://v.youku.com/v_show/id_XMzU1OTMwNzA1Mg==.html?spm=a2hzp.8244740.0.0
+
+根据老师的uml图，在之前的打飞碟游戏的代码的基础上进行修改
+
+![这里写图片描述](https://img-blog.csdn.net/20180423172234981?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0REZ2hzb3Q=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 对场记的Start函数进行修改，场记中有一个bool变量决定是否使用物理系统，当为真的时候，动作管理器就使用物理系统，否则就使用原来的运动管理器。
 ```
@@ -13,6 +19,9 @@ void Start () {
     }
 }
 ```
+同时可以在场景中看到在main这个空对象可以选择是否使用物理运动
+
+![这里写图片描述](https://img-blog.csdn.net/20180423172727274?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0REZ2hzb3Q=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 新添加一个物理运动的管理器,由于是物理运动，因此运动都是要使用FixedUpdate,那么物理运动的管理器也同样是在FixedUpdate的时候更新每一个运动，这一个物理运动的管理器与之前的运动管理器的代码基本上相似。
 ```
